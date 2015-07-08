@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/beer_photo"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/beer_name"
+        style="@style/PrimaryText"
+        android:layout_toRightOf="@+id/beer_photo"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:id="@+id/beer_description"
+        style="@style/SecondaryText"
+        android:paddingLeft="8dp"
+        android:layout_toRightOf="@+id/beer_photo"
+        android:layout_below="@+id/beer_name"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_height="20dp"/>
+
+</RelativeLayout>
